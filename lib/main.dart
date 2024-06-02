@@ -83,7 +83,6 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    var _throwShotAway;
     return Scaffold(
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
@@ -103,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
             });
           },
           children: [
-            PantallaInicio(
+            const PantallaInicio(
 
             ),
             Container(
@@ -126,10 +125,10 @@ class _MyHomePageState extends State<MyHomePage> {
           });
         },
         items: <BottomNavyBarItem>[
-          BottomNavyBarItem(title: Text("Inicio"), icon: Icon(Icons.home), activeColor: Colors.red),
-          BottomNavyBarItem(title: Text("Calendario"), icon: Icon(Icons.edit_calendar_outlined), activeColor: Colors.lightGreen),
-          BottomNavyBarItem(title: Text("Pastillas"), icon: Icon(Icons.medication), activeColor: Colors.purple,),
-          BottomNavyBarItem(title: Text("Ajustes"), icon: Icon(Icons.settings), activeColor: Colors.grey,),
+          BottomNavyBarItem(title: const Text("Inicio"), icon: const Icon(Icons.home), activeColor: Colors.red),
+          BottomNavyBarItem(title: const Text("Calendario"), icon: const Icon(Icons.edit_calendar_outlined), activeColor: Colors.lightGreen),
+          BottomNavyBarItem(title: const Text("Pastillas"), icon: const Icon(Icons.medication), activeColor: Colors.purple,),
+          BottomNavyBarItem(title: const Text("Ajustes"), icon: const Icon(Icons.settings), activeColor: Colors.grey,),
         ],
         ),
        // This trailing comma makes auto-formatting nicer for build methods.

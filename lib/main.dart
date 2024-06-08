@@ -102,14 +102,14 @@ class _MyHomePageState extends State<MyHomePage> {
             });
           },
           children: [
+            Container(
+
+            ),
+            Container(
+
+            ),
             const PantallaInicio(
 
-            ),
-            Container(
-
-            ),
-            Container(
-              color: Colors.deepOrange,
             ),
             Container(
               color: Colors.purple,

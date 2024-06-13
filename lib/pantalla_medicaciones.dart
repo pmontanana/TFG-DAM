@@ -14,6 +14,7 @@ class PantallaMedicaciones extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lightBlueAccent,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -67,11 +68,11 @@ class PantallaMedicaciones extends StatelessWidget {
                           ),
                           child: GestureDetector(
                             onTap: () {
-                              //int hola = Arra;
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => PantallaInfoMedicaciones(
-                                    index: medicamento['id'],)
-                              ));
+                              /*Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) =>
+                                      PantallaInfoMedicaciones(
+                                        index: medicamento['id'],
+                                      )));*/
                             },
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -109,25 +110,12 @@ class PantallaMedicaciones extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          MaterialPageRoute hola;
-          StreamBuilder<QuerySnapshot>(
-              stream: FirebaseFirestore.instance
-                  .collection('medicamentos')
-                  .snapshots(),
-              builder: (context, snapshot) {
-                List<Row> medicamentoWidgets = [];
-                if (snapshot.hasData) {
-                  final medicamentos = snapshot.data?.docs.reversed.toList();
-                  for (var medicamento in medicamentos!) {
-                      hola= Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => CrearMedicacion(indice: medicamento['id']),
-                    )) as MaterialPageRoute;
-                  }
-                };
-                return hola;
-              });
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => CrearMedicacion(),
+          ));
         },
-        child: Icon(Icons.add), // Replace with your desired icon
+
+        child: Icon(Icons.add),
       ),
     );
   }

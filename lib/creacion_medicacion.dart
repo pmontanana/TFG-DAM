@@ -7,15 +7,18 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class CrearMedicacion extends StatelessWidget {
-  CrearMedicacion({super.key});
+  CrearMedicacion({super.key, required this.indice});
 
   final nombreController = TextEditingController();
   final gramosController = TextEditingController();
+  final String indice;
 
 
   @override
   Widget build(BuildContext context) {
     final _textController = TextEditingController();
+    int contador = int.parse(indice);
+
 
     return Scaffold(
       appBar: AppBar(
@@ -50,10 +53,10 @@ class CrearMedicacion extends StatelessWidget {
             onPressed: () {
               CollectionReference collRef = FirebaseFirestore.instance.collection('medicamentos');
               collRef.add({
+                'id': (contador + 1).toString(),
                 'nombre': nombreController.text,
                 'gramos': gramosController.text,
               });
-
               Navigator.of(context).push(MaterialPageRoute(
                 builder: (context) => MyApp(),
               ));
@@ -61,11 +64,8 @@ class CrearMedicacion extends StatelessWidget {
             },
             child: Text('Añadir Medicacion'),
           ),
-
         ],
       )
     );
-
   }
-
 }

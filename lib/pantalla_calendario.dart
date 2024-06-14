@@ -98,7 +98,7 @@ class _PantallaCalendarioState extends State<PantallaCalendario> {
           ),
         ),
         SizedBox(
-          height: 300,
+          height: MediaQuery.of(context).size.height,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: _calendarCarouselNoHeader,

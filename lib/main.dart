@@ -17,7 +17,7 @@ Future<void> main() async {
   await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(ChangeNotifierProvider(create: (context) => CalendarSettings(), child: MyApp()));
+  runApp(ChangeNotifierProvider(create: (context) => CalendarSettings(), child: const MyApp()));
 
 }
 
@@ -120,17 +120,17 @@ class _MyHomePageState extends State<MyHomePage> {
               _currentIndex = index;
             });
           },
-          children: [
-            Container(
+          children: const [
+            /*Container(
+
+            ),*/
+            PantallaCalendario(
 
             ),
-            const PantallaCalendario(
+            PantallaMedicaciones(
 
             ),
-            const PantallaMedicaciones(
-
-            ),
-            const PantallaAjustes(
+            PantallaAjustes(
 
             ),
           ],
@@ -144,10 +144,10 @@ class _MyHomePageState extends State<MyHomePage> {
           });
         },
         items: <BottomNavyBarItem>[
-          BottomNavyBarItem(title: Text("Inicio"), icon: Icon(Icons.home), activeColor: Colors.red),
-          BottomNavyBarItem(title: Text("Calendario"), icon: Icon(Icons.edit_calendar_outlined), activeColor: Colors.lightGreen),
-          BottomNavyBarItem(title: Text("Pastillas"), icon: Icon(Icons.medication), activeColor: Colors.purple,),
-          BottomNavyBarItem(title: Text("Ajustes"), icon: Icon(Icons.settings), activeColor: Colors.grey,),
+          //BottomNavyBarItem(title: Text("Inicio"), icon: Icon(Icons.home), activeColor: Colors.red),
+          BottomNavyBarItem(title: const Text("Calendario"), icon: const Icon(Icons.edit_calendar_outlined), activeColor: Colors.lightGreen),
+          BottomNavyBarItem(title: const Text("Pastillas"), icon: const Icon(Icons.medication), activeColor: Colors.purple,),
+          BottomNavyBarItem(title: const Text("Ajustes"), icon: const Icon(Icons.settings), activeColor: Colors.grey,),
 
         ],
         ),

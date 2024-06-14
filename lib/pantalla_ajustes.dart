@@ -4,7 +4,7 @@ import 'ajuste_calendario.dart';
 
 
 class PantallaAjustes extends StatefulWidget {
-  const PantallaAjustes({Key? key}) : super(key: key);
+  const PantallaAjustes({super.key});
 
   @override
   _PantallaAjustesState createState() => _PantallaAjustesState();
@@ -13,17 +13,20 @@ class PantallaAjustes extends StatefulWidget {
 class _PantallaAjustesState extends State<PantallaAjustes> {
   bool _notificationsEnabled = false;
   ThemeMode _themeMode = ThemeMode.system;
+  Color _colors = Colors.white;
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
+      backgroundColor: _colors,
       body: ListView(
         children: [
           ListTile(
             leading: const Icon(Icons.notifications),
             title: const Text('Notificaciones'),
             trailing: Switch(
+              activeColor: Colors.blueAccent,
+              inactiveTrackColor: _colors,
               value: _notificationsEnabled,
               onChanged: (value) {
                 setState(() {
@@ -46,6 +49,7 @@ class _PantallaAjustesState extends State<PantallaAjustes> {
                         onPressed: () {
                           setState(() {
                             _themeMode = ThemeMode.light;
+                            _colors = Colors.white;
                           });
                           Navigator.pop(context);
                         },
@@ -55,6 +59,7 @@ class _PantallaAjustesState extends State<PantallaAjustes> {
                         onPressed: () {
                           setState(() {
                             _themeMode = ThemeMode.dark;
+                            _colors = Colors.grey;
                           });
                           Navigator.pop(context);
                         },

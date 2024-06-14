@@ -1,8 +1,8 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:tfg/pantalla_ajustes.dart';
-import 'package:tfg/pantalla_calendario.dart';
-import 'package:tfg/pantalla_medicaciones.dart';
+import 'package:ePastillero/pantalla_ajustes.dart';
+import 'package:ePastillero/pantalla_calendario.dart';
+import 'package:ePastillero/pantalla_medicaciones.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'firebase_options.dart';

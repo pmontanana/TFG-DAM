@@ -1,6 +1,6 @@
 # TFG-DAM
 
-[![GitHub license](https://img.shields.io/github/license/pmontanana/TFG-DAM.svg)](LICENSE)
+[![GitHub license](https://img.shields.io/github/license/pmontanana/TFG-DAM.svg)](LICNSE)
 [![GitHub stars](https://img.shields.io/github/stars/pmontanana/TFG-DAM.svg)](https://github.com/pmontanana/TFG-DAM/stargazers)
 
 ## 🚀 Descripción

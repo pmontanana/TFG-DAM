@@ -1,16 +1,67 @@
-# tfg
+# TFG-DAM
 
-A new Flutter project.
+[![GitHub license](https://img.shields.io/github/license/pmontanana/TFG-DAM.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/pmontanana/TFG-DAM.svg)](https://github.com/pmontanana/TFG-DAM/stargazers)
 
-## Getting Started
+## 🚀 Descripción
 
-This project is a starting point for a Flutter application.
+**TFG-DAM** es el Trabajo de Fin de Grado para el ciclo de Desarrollo de Aplicaciones Multiplataforma. 
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Tecnologías utilizadas
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Dart** (37.6%)
+- **C++** (31.2%)
+- **CMake** (25.2%)
+- **Swift** (2.6%)
+- **C** (1.8%)
+- **HTML** (1.6%)
+
+---
+
+## 📦 Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/pmontanana/TFG-DAM.git
+   cd TFG-DAM
+   ```
+
+2. Instala las dependencias necesarias:
+  ```bash
+  flutter pub get
+  ```
+
+---
+
+## 🚦 Uso
+
+
+```bash
+cd TFG-DAM
+dart run main.dart
+```
+
+---
+
+## 🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas! Por favor, abre un issue o pull request para discutir posibles cambios o mejoras.
+
+---
+
+## 📝 Licencia
+
+Este proyecto está bajo la licencia [MIT](LICENSE).
+
+---
+
+## 👤 Autor
+
+**Pablo Montañana**  
+[GitHub](https://github.com/pmontanana)
+
+---
+
+## 🌟 ¡No olvides darle una estrella al repo si te resulta útil!
